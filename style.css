@@ -1,0 +1,66 @@
+:root {
+  --primary: #ff3860;
+  --primary-hover: #ff6b81;
+  --accent: #4bcffa;
+  --bg: #0f0f1c;
+  --surface: #1c1c2e;
+  --text: #f1f2f6;
+  --text-muted: #a4b0be;
+  --radius: 12px;
+}
+
+body {
+  font-family: 'Press Start 2P', monospace;
+  background: linear-gradient(180deg, #0f0f1c 0%, #1c1c2e 100%);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: var(--primary);
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.logo {
+  font-family: 'Press Start 2P', monospace;
+  text-shadow: 0 0 8px var(--accent);
+}
+
+main {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.zone-item {
+  background: var(--surface);
+  border-radius: var(--radius);
+  overflow: hidden;
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.2s;
+}
+
+.zone-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px var(--accent);
+}
+
+.zone-item img {
+  width: 100%;
+  border-radius: var(--radius);
+}
+
+footer {
+  background: var(--surface);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  color: var(--text-muted);
+}
